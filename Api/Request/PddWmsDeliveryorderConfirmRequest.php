@@ -2,7 +2,7 @@
 
 namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
+use pdd\PopBaseHttpRequest;
 use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
 
 class PddWmsDeliveryorderConfirmRequest extends PopBaseHttpRequest{
