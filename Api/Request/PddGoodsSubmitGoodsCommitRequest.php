@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -26,7 +26,7 @@ class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     private $carouselGallery;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_CarouselVideoItem>, "carousel_video")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_CarouselVideoItem>, "carousel_video")
      */
     private $carouselVideo;
 
@@ -71,7 +71,7 @@ class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     private $detailGallery;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_ElecGoodsAttributes, "elec_goods_attributes")
+     * @JsonProperty(\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_ElecGoodsAttributes, "elec_goods_attributes")
      */
     private $elecGoodsAttributes;
 
@@ -96,7 +96,7 @@ class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     private $goodsName;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_GoodsPropertiesItem>, "goods_properties")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_GoodsPropertiesItem>, "goods_properties")
      */
     private $goodsProperties;
 
@@ -171,7 +171,7 @@ class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     private $outGoodsId;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_OverseaGoods, "oversea_goods")
+     * @JsonProperty(\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_OverseaGoods, "oversea_goods")
      */
     private $overseaGoods;
 
@@ -206,7 +206,7 @@ class PddGoodsSubmitGoodsCommitRequest extends PopBaseHttpRequest{
     private $shipmentLimitSecond;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_SkuListItem>, "sku_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_SkuListItem>, "sku_list")
      */
     private $skuList;
 
@@ -742,7 +742,7 @@ class PddGoodsSubmitGoodsCommitRequest_SkuListItem extends PopBaseJsonEntity{
     private $outSkuSn;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSubmitGoodsCommitRequest_SkuListItemOverseaSku, "oversea_sku")
+     * @JsonProperty(\pdd\Api\Request\PddGoodsSubmitGoodsCommitRequest_SkuListItemOverseaSku, "oversea_sku")
      */
     private $overseaSku;
 

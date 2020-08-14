@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddVoucherVirtualCardVerificationRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -16,7 +16,7 @@ class PddVoucherVirtualCardVerificationRequest extends PopBaseHttpRequest{
     private $orderSn;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherVirtualCardVerificationRequest_VoucherDataListItem>, "voucher_data_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddVoucherVirtualCardVerificationRequest_VoucherDataListItem>, "voucher_data_list")
      */
     private $voucherDataList;
 

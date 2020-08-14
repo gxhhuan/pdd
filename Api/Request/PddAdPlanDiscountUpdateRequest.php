@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddAdPlanDiscountUpdateRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -16,7 +16,7 @@ class PddAdPlanDiscountUpdateRequest extends PopBaseHttpRequest{
     private $planId;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdPlanDiscountUpdateRequest_DiscountsItem>, "discounts")
+     * @JsonProperty(List<\pdd\Api\Request\PddAdPlanDiscountUpdateRequest_DiscountsItem>, "discounts")
      */
     private $discounts;
 

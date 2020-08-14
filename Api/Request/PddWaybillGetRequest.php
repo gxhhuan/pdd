@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWaybillGetRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWaybillGetRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequest, "param_waybill_cloud_print_apply_new_request")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequest, "param_waybill_cloud_print_apply_new_request")
      */
     private $paramWaybillCloudPrintApplyNewRequest;
 
@@ -50,12 +50,12 @@ class PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequest extends PopBase
     private $needEncrypt;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestSender, "sender")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestSender, "sender")
      */
     private $sender;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItem>, "trade_order_info_dtos")
+     * @JsonProperty(List<\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItem>, "trade_order_info_dtos")
      */
     private $tradeOrderInfoDtos;
 
@@ -89,7 +89,7 @@ class PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestSender extends P
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestSenderAddress, "address")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestSenderAddress, "address")
      */
     private $address;
 
@@ -196,17 +196,17 @@ class PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDt
     private $objectId;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemOrderInfo, "order_info")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemOrderInfo, "order_info")
      */
     private $orderInfo;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemPackageInfo, "package_info")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemPackageInfo, "package_info")
      */
     private $packageInfo;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemRecipient, "recipient")
+     * @JsonProperty(\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemRecipient, "recipient")
      */
     private $recipient;
 
@@ -293,7 +293,7 @@ class PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDt
     private $id;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemPackageInfoItemsItem>, "items")
+     * @JsonProperty(List<\pdd\Api\Request\PddWaybillGetRequest_ParamWaybillCloudPrintApplyNewRequestTradeOrderInfoDtosItemPackageInfoItemsItem>, "items")
      */
     private $items;
 

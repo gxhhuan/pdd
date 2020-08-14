@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddGoodsLogisticsSerTemplateUpdateRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -31,12 +31,12 @@ class PddGoodsLogisticsSerTemplateUpdateRequest extends PopBaseHttpRequest{
     private $priceUnit;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_ServiceAreaListItem>, "service_area_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_ServiceAreaListItem>, "service_area_list")
      */
     private $serviceAreaList;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItem>, "cat_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItem>, "cat_list")
      */
     private $catList;
 
@@ -139,7 +139,7 @@ class PddGoodsLogisticsSerTemplateUpdateRequest_CatListItem extends PopBaseJsonE
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItemListItem>, "list")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItemListItem>, "list")
      */
     private $list;
 
@@ -174,7 +174,7 @@ class PddGoodsLogisticsSerTemplateUpdateRequest_CatListItemListItem extends PopB
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItemListItemContentItem>, "content")
+     * @JsonProperty(List<\pdd\Api\Request\PddGoodsLogisticsSerTemplateUpdateRequest_CatListItemListItemContentItem>, "content")
      */
     private $content;
 

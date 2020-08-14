@@ -5,8 +5,8 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddVasOrderSearchRequest;
-use Com\Pdd\Pop\Sdk\PopHttpClient;
+use pdd\Api\Request\PddVasOrderSearchRequest;
+use pdd\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);
 
@@ -24,7 +24,7 @@ $request->setPayTimeStart(1);
 $request->setSkuId(1);
 try{
     $response = $client->syncInvoke($request);
-}catch(Com\Pdd\Pop\Sdk\PopHttpException $e){
+}catch(pdd\PopHttpException $e){
     echo $e->getMessage();
     exit;
 }

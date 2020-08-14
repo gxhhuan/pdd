@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddStockWareSkuUpdateRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -16,7 +16,7 @@ class PddStockWareSkuUpdateRequest extends PopBaseHttpRequest{
     private $wareId;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareSkuUpdateRequest_WareSkusItem>, "ware_skus")
+     * @JsonProperty(List<\pdd\Api\Request\PddStockWareSkuUpdateRequest_WareSkusItem>, "ware_skus")
      */
     private $wareSkus;
 

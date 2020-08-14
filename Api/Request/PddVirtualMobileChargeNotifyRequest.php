@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddVirtualMobileChargeNotifyRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddVirtualMobileChargeNotifyRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddVirtualMobileChargeNotifyRequest_ChargeCertiItem>, "charge_certi")
+     * @JsonProperty(List<\pdd\Api\Request\PddVirtualMobileChargeNotifyRequest_ChargeCertiItem>, "charge_certi")
      */
     private $chargeCerti;
 

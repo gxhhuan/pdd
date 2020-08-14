@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsOrderCancelRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWmsOrderCancelRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderCancelRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOrderCancelRequest_Request, "request")
      */
     private $request;
 

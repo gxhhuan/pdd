@@ -1,8 +1,8 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk;
+namespace pdd;
 
-use Com\Pdd\Pop\Sdk\Common\JsonUtil;
+use pdd\Common\JsonUtil;
 use JsonSerializable;
 use ReflectionClass;
 

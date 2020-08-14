@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsOrderstateSendRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWmsOrderstateSendRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOrderstateSendRequest_Request, "request")
      */
     private $request;
 
@@ -45,12 +45,12 @@ class PddWmsOrderstateSendRequest_Request extends PopBaseJsonEntity{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestOrder, "order")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOrderstateSendRequest_RequestOrder, "order")
      */
     private $order;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestOrderLinesItem>, "orderLines")
+     * @JsonProperty(List<\pdd\Api\Request\PddWmsOrderstateSendRequest_RequestOrderLinesItem>, "orderLines")
      */
     private $orderLines;
 
@@ -60,7 +60,7 @@ class PddWmsOrderstateSendRequest_Request extends PopBaseJsonEntity{
     private $ownerCode;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestProcess, "process")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOrderstateSendRequest_RequestProcess, "process")
      */
     private $process;
 

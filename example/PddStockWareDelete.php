@@ -5,8 +5,8 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddStockWareDeleteRequest;
-use Com\Pdd\Pop\Sdk\PopHttpClient;
+use pdd\Api\Request\PddStockWareDeleteRequest;
+use pdd\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);
 
@@ -15,7 +15,7 @@ $request = new PddStockWareDeleteRequest();
 $request->setWareId(1);
 try{
     $response = $client->syncInvoke($request);
-}catch(Com\Pdd\Pop\Sdk\PopHttpException $e){
+}catch(pdd\PopHttpException $e){
     echo $e->getMessage();
     exit;
 }

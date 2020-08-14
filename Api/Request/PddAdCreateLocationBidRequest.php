@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddAdCreateLocationBidRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -21,7 +21,7 @@ class PddAdCreateLocationBidRequest extends PopBaseHttpRequest{
     private $unitId;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdCreateLocationBidRequest_LocationBidsItem>, "location_bids")
+     * @JsonProperty(List<\pdd\Api\Request\PddAdCreateLocationBidRequest_LocationBidsItem>, "location_bids")
      */
     private $locationBids;
 

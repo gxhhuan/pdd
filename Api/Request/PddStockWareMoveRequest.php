@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddStockWareMoveRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,12 +11,12 @@ class PddStockWareMoveRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareMoveRequest_StockMoveOrderActionDto, "stock_move_order_action_dto")
+     * @JsonProperty(\pdd\Api\Request\PddStockWareMoveRequest_StockMoveOrderActionDto, "stock_move_order_action_dto")
      */
     private $stockMoveOrderActionDto;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareMoveRequest_StockMoveRecordActionDtoListItem>, "stock_move_record_action_dto_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddStockWareMoveRequest_StockMoveRecordActionDtoListItem>, "stock_move_record_action_dto_list")
      */
     private $stockMoveRecordActionDtoList;
 

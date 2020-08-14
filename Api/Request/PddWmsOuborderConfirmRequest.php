@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsOuborderConfirmRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWmsOuborderConfirmRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderConfirmRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOuborderConfirmRequest_Request, "request")
      */
     private $request;
 
@@ -45,12 +45,12 @@ class PddWmsOuborderConfirmRequest_Request extends PopBaseJsonEntity{
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderConfirmRequest_RequestOrderLinesItem>, "orderLines")
+     * @JsonProperty(List<\pdd\Api\Request\PddWmsOuborderConfirmRequest_RequestOrderLinesItem>, "orderLines")
      */
     private $orderLines;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderConfirmRequest_RequestOubOrder, "oubOrder")
+     * @JsonProperty(\pdd\Api\Request\PddWmsOuborderConfirmRequest_RequestOubOrder, "oubOrder")
      */
     private $oubOrder;
 

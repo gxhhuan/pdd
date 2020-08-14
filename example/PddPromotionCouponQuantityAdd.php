@@ -5,8 +5,8 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddPromotionCouponQuantityAddRequest;
-use Com\Pdd\Pop\Sdk\PopHttpClient;
+use pdd\Api\Request\PddPromotionCouponQuantityAddRequest;
+use pdd\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);
 
@@ -16,7 +16,7 @@ $request->setBatchId(1);
 $request->setAddQuantity(1);
 try{
     $response = $client->syncInvoke($request);
-}catch(Com\Pdd\Pop\Sdk\PopHttpException $e){
+}catch(pdd\PopHttpException $e){
     echo $e->getMessage();
     exit;
 }

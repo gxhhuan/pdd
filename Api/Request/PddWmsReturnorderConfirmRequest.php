@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsReturnorderConfirmRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWmsReturnorderConfirmRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderConfirmRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddWmsReturnorderConfirmRequest_Request, "request")
      */
     private $request;
 
@@ -60,7 +60,7 @@ class PddWmsReturnorderConfirmRequest_Request extends PopBaseJsonEntity{
     private $logisticsName;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderConfirmRequest_RequestOrderLinesItem>, "orderLines")
+     * @JsonProperty(List<\pdd\Api\Request\PddWmsReturnorderConfirmRequest_RequestOrderLinesItem>, "orderLines")
      */
     private $orderLines;
 

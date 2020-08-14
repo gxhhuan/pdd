@@ -5,8 +5,8 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddDdkOrderListRangeGetRequest;
-use Com\Pdd\Pop\Sdk\PopHttpClient;
+use pdd\Api\Request\PddDdkOrderListRangeGetRequest;
+use pdd\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);
 
@@ -18,7 +18,7 @@ $request->setPageSize(1);
 $request->setEndTime('str');
 try{
     $response = $client->syncInvoke($request);
-}catch(Com\Pdd\Pop\Sdk\PopHttpException $e){
+}catch(pdd\PopHttpException $e){
     echo $e->getMessage();
     exit;
 }

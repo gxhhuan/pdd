@@ -1,8 +1,8 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
+use pdd\PopBaseHttpRequest;
 
 class PddDeleteGoodsCommitRequest extends PopBaseHttpRequest{
     public function __construct(){

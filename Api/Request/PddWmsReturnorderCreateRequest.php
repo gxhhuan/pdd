@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsReturnorderCreateRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWmsReturnorderCreateRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderCreateRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddWmsReturnorderCreateRequest_Request, "request")
      */
     private $request;
 
@@ -55,7 +55,7 @@ class PddWmsReturnorderCreateRequest_Request extends PopBaseJsonEntity{
     private $orderFlag;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderCreateRequest_RequestOrderLinesItem>, "orderLines")
+     * @JsonProperty(List<\pdd\Api\Request\PddWmsReturnorderCreateRequest_RequestOrderLinesItem>, "orderLines")
      */
     private $orderLines;
 

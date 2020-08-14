@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddCloudprintCmdprintRenderRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddCloudprintCmdprintRenderRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_Request, "request")
+     * @JsonProperty(\pdd\Api\Request\PddCloudprintCmdprintRenderRequest_Request, "request")
      */
     private $request;
 
@@ -55,12 +55,12 @@ class PddCloudprintCmdprintRenderRequest_Request extends PopBaseJsonEntity{
     private $clientType;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestConfig, "config")
+     * @JsonProperty(\pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestConfig, "config")
      */
     private $config;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocument, "document")
+     * @JsonProperty(\pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocument, "document")
      */
     private $document;
 
@@ -169,7 +169,7 @@ class PddCloudprintCmdprintRenderRequest_RequestDocument extends PopBaseJsonEnti
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocumentContentsItem>, "contents")
+     * @JsonProperty(List<\pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocumentContentsItem>, "contents")
      */
     private $contents;
 

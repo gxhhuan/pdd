@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddVoucherVoucherComplainRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -21,7 +21,7 @@ class PddVoucherVoucherComplainRequest extends PopBaseHttpRequest{
     private $outBizNo;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherVoucherComplainRequest_VoucherListItem>, "voucher_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddVoucherVoucherComplainRequest_VoucherListItem>, "voucher_list")
      */
     private $voucherList;
 

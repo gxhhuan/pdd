@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWmsDepotTicketNotifyRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -21,7 +21,7 @@ class PddWmsDepotTicketNotifyRequest extends PopBaseHttpRequest{
     private $content;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsDepotTicketNotifyRequest_AttachUrlItem>, "attachUrl")
+     * @JsonProperty(List<\pdd\Api\Request\PddWmsDepotTicketNotifyRequest_AttachUrlItem>, "attachUrl")
      */
     private $attachUrl;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
+use pdd\PopBaseHttpRequest;
 
 class PddOpenMsgServiceSendMsgRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -25,7 +25,7 @@ class PddOpenMsgServiceSendMsgRequest extends PopBaseHttpRequest{
     private $templateCode;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddOpenMsgServiceSendMsgRequest_tring, String>, "template_param")
+     * @JsonProperty(List<\pdd\Api\Request\PddOpenMsgServiceSendMsgRequest_tring, String>, "template_param")
      */
     private $templateParam;
 

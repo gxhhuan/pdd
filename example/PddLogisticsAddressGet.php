@@ -5,7 +5,7 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddLogisticsAddressGetRequest;
+use pdd\Api\Request\PddLogisticsAddressGetRequest;
 use Com\Pdd\Pop\Sdk\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk;
+namespace pdd;
 
 /**
  * Pop接口调用的客户端类

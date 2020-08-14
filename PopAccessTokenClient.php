@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk;
+namespace pdd;
 
-use Com\Pdd\Pop\Sdk\Token\AccessTokenRequest;
-use Com\Pdd\Pop\Sdk\Token\RefreshAccessTokenRequest;
+use pdd\Token\AccessTokenRequest;
+use pdd\Token\RefreshAccessTokenRequest;
 
 /**
  * Pop接口调用的客户端类

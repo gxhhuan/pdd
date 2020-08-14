@@ -5,8 +5,8 @@
 require_once dirname(__FILE__) . '/Config.php';
 require_once dirname(__FILE__) . "/../vendor/autoload.php";
 
-use Com\Pdd\Pop\Sdk\Api\Request\PddDdkOauthGoodsZsUnitUrlGenRequest;
-use Com\Pdd\Pop\Sdk\PopHttpClient;
+use pdd\Api\Request\PddDdkOauthGoodsZsUnitUrlGenRequest;
+use pdd\PopHttpClient;
 
 $client = new PopHttpClient(Config::$clientId, Config::$clientSecret);
 
@@ -17,7 +17,7 @@ $request->setPid('str');
 $request->setGenerateSchemaUrl('str');
 try{
     $response = $client->syncInvoke($request, Config::$accessToken);
-}catch(Com\Pdd\Pop\Sdk\PopHttpException $e){
+}catch(pdd\PopHttpException $e){
     echo $e->getMessage();
     exit;
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddAdUnitCreateRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -26,12 +26,12 @@ class PddAdUnitCreateRequest extends PopBaseHttpRequest{
     private $goodsId;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdUnitCreateRequest_KeywordsItem>, "keywords")
+     * @JsonProperty(List<\pdd\Api\Request\PddAdUnitCreateRequest_KeywordsItem>, "keywords")
      */
     private $keywords;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdUnitCreateRequest_CreativeListItem>, "creative_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddAdUnitCreateRequest_CreativeListItem>, "creative_list")
      */
     private $creativeList;
 

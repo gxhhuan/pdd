@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddAdUpdateBidRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -21,7 +21,7 @@ class PddAdUpdateBidRequest extends PopBaseHttpRequest{
     private $unitId;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdUpdateBidRequest_BidList, "bid_list")
+     * @JsonProperty(\pdd\Api\Request\PddAdUpdateBidRequest_BidList, "bid_list")
      */
     private $bidList;
 

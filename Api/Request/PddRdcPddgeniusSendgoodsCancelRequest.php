@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddRdcPddgeniusSendgoodsCancelRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddRdcPddgeniusSendgoodsCancelRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddRdcPddgeniusSendgoodsCancelRequest_Param, "param")
+     * @JsonProperty(\pdd\Api\Request\PddRdcPddgeniusSendgoodsCancelRequest_Param, "param")
      */
     private $param;
 

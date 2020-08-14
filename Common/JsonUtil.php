@@ -1,6 +1,6 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Common;
+namespace pdd\Common;
 
 /**
  * 全局处理字符串

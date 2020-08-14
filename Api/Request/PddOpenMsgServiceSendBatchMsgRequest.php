@@ -1,8 +1,8 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
+use pdd\PopBaseHttpRequest;
 
 class PddOpenMsgServiceSendBatchMsgRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -25,7 +25,7 @@ class PddOpenMsgServiceSendBatchMsgRequest extends PopBaseHttpRequest{
     private $templateCode;
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddOpenMsgServiceSendBatchMsgRequest_Map<String, String>>, "template_param_json")
+     * @JsonProperty(List<\pdd\Api\Request\PddOpenMsgServiceSendBatchMsgRequest_Map<String, String>>, "template_param_json")
      */
     private $templateParamJson;
 

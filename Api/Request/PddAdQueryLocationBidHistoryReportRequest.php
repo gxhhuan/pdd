@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddAdQueryLocationBidHistoryReportRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -41,7 +41,7 @@ class PddAdQueryLocationBidHistoryReportRequest extends PopBaseHttpRequest{
     private $groupBy;
 
     /**
-     * @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdQueryLocationBidHistoryReportRequest_PageRequest, "page_request")
+     * @JsonProperty(\pdd\Api\Request\PddAdQueryLocationBidHistoryReportRequest_PageRequest, "page_request")
      */
     private $pageRequest;
 

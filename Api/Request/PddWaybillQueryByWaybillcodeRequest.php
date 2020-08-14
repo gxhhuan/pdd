@@ -1,9 +1,9 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use pdd\PopBaseHttpRequest;
+use pdd\PopBaseJsonEntity;
 
 class PddWaybillQueryByWaybillcodeRequest extends PopBaseHttpRequest{
     public function __construct(){
@@ -11,7 +11,7 @@ class PddWaybillQueryByWaybillcodeRequest extends PopBaseHttpRequest{
     }
 
     /**
-     * @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillQueryByWaybillcodeRequest_ParamListItem>, "param_list")
+     * @JsonProperty(List<\pdd\Api\Request\PddWaybillQueryByWaybillcodeRequest_ParamListItem>, "param_list")
      */
     private $paramList;
 

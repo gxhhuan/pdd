@@ -1,6 +1,6 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk;
+namespace pdd;
 
 /**
  * Pop response 类
